@@ -1,0 +1,32 @@
+--- CentOS-Base.repo    2020-12-08 11:10:38.651986767 -0500
++++ CentOS-Base.repo.vault      2020-12-08 10:50:02.717001094 -0500
+@@ -12,24 +12,24 @@
+
+ [base]
+ name=CentOS-$releasever - Base
+-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+-#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
++#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
++baseurl=http://vault.centos.org/centos/$releasever/os/$basearch/
+ gpgcheck=1
+ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+ #released updates
+ [updates]
+ name=CentOS-$releasever - Updates
+-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+-#baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
++#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
++baseurl=http://vault.centos.org/centos/$releasever/updates/$basearch/
+ gpgcheck=1
+ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+ #additional packages that may be useful
+ [extras]
+ name=CentOS-$releasever - Extras
+-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+-#baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
++#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
++baseurl=http://vault.centos.org/centos/$releasever/extras/$basearch/
+ gpgcheck=1
+ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
