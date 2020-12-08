@@ -1,5 +1,5 @@
 # Centos6FinalUpdate
-A gnu patch file so you can update your Centos 6 systems with the final available updates
+A new Centos-Base.repo file so you can update your Centos 6 systems with the final available updates and install software.
 
 
     cd /etc/yum.repos.d
